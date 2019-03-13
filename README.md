@@ -1,28 +1,43 @@
-# df4j
-Dataframe For Java
+# Dataframe For Java
 
-Constructor
+## Constructor
 DataFrame([data, index, columns, dtype, copy])	Two-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns).
-Attributes and underlying data
-Axes
 
-DataFrame.index	The index (row labels) of the DataFrame.
-DataFrame.columns	The column labels of the DataFrame.
-DataFrame.dtypes	Return the dtypes in the DataFrame.
-DataFrame.ftypes	Return the ftypes (indication of sparse/dense and dtype) in DataFrame.
-DataFrame.get_dtype_counts()	Return counts of unique dtypes in this object.
-DataFrame.get_ftype_counts()	(DEPRECATED) Return counts of unique ftypes in this object.
-DataFrame.select_dtypes([include, exclude])	Return a subset of the DataFrame’s columns based on the column dtypes.
-DataFrame.values	Return a Numpy representation of the DataFrame.
-DataFrame.get_values()	Return an ndarray after converting sparse values to dense.
-DataFrame.axes	Return a list representing the axes of the DataFrame.
-DataFrame.ndim	Return an int representing the number of axes / array dimensions.
-DataFrame.size	Return an int representing the number of elements in this object.
-DataFrame.shape	Return a tuple representing the dimensionality of the DataFrame.
-DataFrame.memory_usage([index, deep])	Return the memory usage of each column in bytes.
-DataFrame.empty	Indicator whether DataFrame is empty.
-DataFrame.is_copy	Return the copy.
-Conversion
+## Attributes and underlying data Axes
+
+- [] DataFrame.index	The index (row labels) of the DataFrame.
+
+- [] DataFrame.columns	The column labels of the DataFrame.
+
+- [] DataFrame.dtypes	Return the dtypes in the DataFrame.
+
+- [] DataFrame.ftypes	Return the ftypes (indication of sparse/dense and dtype) in DataFrame.
+
+- [] DataFrame.get_dtype_counts()	Return counts of unique dtypes in this object.
+
+- [] DataFrame.get_ftype_counts()	(DEPRECATED) Return counts of unique ftypes in this object.
+
+- [] DataFrame.select_dtypes([include, exclude])	Return a subset of the DataFrame’s columns based on the column dtypes.
+
+- [] DataFrame.values	Return a Numpy representation of the DataFrame.
+
+- [] DataFrame.get_values()	Return an ndarray after converting sparse values to dense.
+
+- [] DataFrame.axes	Return a list representing the axes of the DataFrame.
+
+- [] DataFrame.ndim	Return an int representing the number of axes / array dimensions.
+
+- [] DataFrame.size	Return an int representing the number of elements in this object.
+
+- [] DataFrame.shape	Return a tuple representing the dimensionality of the DataFrame.
+
+- [] DataFrame.memory_usage([index, deep])	Return the memory usage of each column in bytes.
+
+- [] DataFrame.empty	Indicator whether DataFrame is empty.
+
+- [] DataFrame.is_copy	Return the copy.
+
+## Conversion
 DataFrame.astype(dtype[, copy, errors])	Cast a pandas object to a specified dtype dtype.
 DataFrame.convert_objects([convert_dates, …])	(DEPRECATED) Attempt to infer better dtype for object columns.
 DataFrame.infer_objects()	Attempt to infer better dtypes for object columns.
@@ -30,7 +45,8 @@ DataFrame.copy([deep])	Make a copy of this object’s indices and data.
 DataFrame.isna()	Detect missing values.
 DataFrame.notna()	Detect existing (non-missing) values.
 DataFrame.bool()	Return the bool of a single element PandasObject.
-Indexing, iteration
+
+## Indexing, iteration
 DataFrame.head([n])	Return the first n rows.
 DataFrame.at	Access a single value for a row/column label pair.
 DataFrame.iat	Access a single value for a row/column pair by integer position.
@@ -54,7 +70,7 @@ DataFrame.mask(cond[, other, inplace, axis, …])	Replace values where the condi
 DataFrame.query(expr[, inplace])	Query the columns of a DataFrame with a boolean expression.
 For more information on .at, .iat, .loc, and .iloc, see the indexing documentation.
 
-Binary operator functions
+##  Binary operator functions
 DataFrame.add(other[, axis, level, fill_value])	Addition of dataframe and other, element-wise (binary operator add).
 DataFrame.sub(other[, axis, level, fill_value])	Subtraction of dataframe and other, element-wise (binary operator sub).
 DataFrame.mul(other[, axis, level, fill_value])	Multiplication of dataframe and other, element-wise (binary operator mul).
@@ -83,7 +99,7 @@ DataFrame.combine_first(other)	Update null elements with value in the same locat
 Function application, GroupBy & Window
 DataFrame.apply(func[, axis, broadcast, …])	Apply a function along an axis of the DataFrame.
 DataFrame.applymap(func)	Apply a function to a Dataframe elementwise.
-DataFrame.pipe(func, *args, **kwargs)	Apply func(self, *args, **kwargs).
+DataFrame.pipe(func, *args, **kwargs)	Apply func(self, *args, **kwargs). 
 DataFrame.agg(func[, axis])	Aggregate using one or more operations over the specified axis.
 DataFrame.aggregate(func[, axis])	Aggregate using one or more operations over the specified axis.
 DataFrame.transform(func[, axis])	Call func on self producing a DataFrame with transformed values and that has the same axis length as self.
@@ -130,7 +146,7 @@ DataFrame.sum([axis, skipna, level, …])	Return the sum of the values for the r
 DataFrame.std([axis, skipna, level, ddof, …])	Return sample standard deviation over requested axis.
 DataFrame.var([axis, skipna, level, ddof, …])	Return unbiased variance over requested axis.
 DataFrame.nunique([axis, dropna])	Count distinct observations over requested axis.
-Reindexing / Selection / Label manipulation
+## Reindexing / Selection / Label manipulation
 DataFrame.add_prefix(prefix)	Prefix labels with string prefix.
 DataFrame.add_suffix(suffix)	Suffix labels with string suffix.
 DataFrame.align(other[, join, axis, level, …])	Align two objects on their axes with the specified join method for each axis Index.
@@ -200,8 +216,11 @@ DataFrame.last_valid_index()	Return index for last non-NA/null value.
 DataFrame.resample(rule[, how, axis, …])	Resample time-series data.
 DataFrame.to_period([freq, axis, copy])	Convert DataFrame from DatetimeIndex to PeriodIndex with desired frequency (inferred from index if not passed).
 DataFrame.to_timestamp([freq, how, axis, copy])	Cast to DatetimeIndex of timestamps, at beginning of period.
-DataFrame.tz_convert(tz[, axis, level, copy])	Convert tz-aware axis to target time zone.
-DataFrame.tz_localize(tz[, axis, level, …])	Localize tz-naive index of a Series or DataFrame to target time zone.
+
+- [] DataFrame.tz_convert(tz[, axis, level, copy])	Convert tz-aware axis to target time zone.
+
+- [] DataFrame.tz_localize(tz[, axis, level, …])	Localize tz-naive index of a Series or DataFrame to target time zone.
+
 ## Plotting
 DataFrame.plot is both a callable method and a namespace attribute for specific plotting methods of the form DataFrame.plot.<kind>.
 
@@ -220,7 +239,7 @@ DataFrame.plot.scatter(x, y[, s, c])	Create a scatter plot with varying marker p
 DataFrame.boxplot([column, by, ax, …])	Make a box plot from DataFrame columns.
 DataFrame.hist([column, by, grid, …])	Make a histogram of the DataFrame’s.
 
-Serialization / IO / Conversion
+## Serialization / IO / Conversion
 DataFrame.from_csv(path[, header, sep, …])	(DEPRECATED) Read CSV file.
 DataFrame.from_dict(data[, orient, dtype, …])	Construct DataFrame from dict of array-like or dicts.
 DataFrame.from_items(items[, columns, orient])	(DEPRECATED) Construct a DataFrame from a list of tuples.
