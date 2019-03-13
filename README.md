@@ -5,37 +5,37 @@ DataFrame([data, index, columns, dtype, copy])	Two-dimensional size-mutable, pot
 
 ## Attributes and underlying data Axes
 
-- [] DataFrame.index	The index (row labels) of the DataFrame.
+- [ ] DataFrame.index	The index (row labels) of the DataFrame.
 
-- [] DataFrame.columns	The column labels of the DataFrame.
+- [ ] DataFrame.columns	The column labels of the DataFrame.
 
-- [] DataFrame.dtypes	Return the dtypes in the DataFrame.
+- [ ] DataFrame.dtypes	Return the dtypes in the DataFrame.
 
-- [] DataFrame.ftypes	Return the ftypes (indication of sparse/dense and dtype) in DataFrame.
+- [ ] DataFrame.ftypes	Return the ftypes (indication of sparse/dense and dtype) in DataFrame.
 
-- [] DataFrame.get_dtype_counts()	Return counts of unique dtypes in this object.
+- [ ] DataFrame.get_dtype_counts()	Return counts of unique dtypes in this object.
 
-- [] DataFrame.get_ftype_counts()	(DEPRECATED) Return counts of unique ftypes in this object.
+- [ ] DataFrame.get_ftype_counts()	(DEPRECATED) Return counts of unique ftypes in this object.
 
-- [] DataFrame.select_dtypes([include, exclude])	Return a subset of the DataFrame’s columns based on the column dtypes.
+- [ ] DataFrame.select_dtypes([include, exclude])	Return a subset of the DataFrame’s columns based on the column dtypes.
 
-- [] DataFrame.values	Return a Numpy representation of the DataFrame.
+- [ ] DataFrame.values	Return a Numpy representation of the DataFrame.
 
-- [] DataFrame.get_values()	Return an ndarray after converting sparse values to dense.
+- [ ] DataFrame.get_values()	Return an ndarray after converting sparse values to dense.
 
-- [] DataFrame.axes	Return a list representing the axes of the DataFrame.
+- [ ] DataFrame.axes	Return a list representing the axes of the DataFrame.
 
-- [] DataFrame.ndim	Return an int representing the number of axes / array dimensions.
+- [ ] DataFrame.ndim	Return an int representing the number of axes / array dimensions.
 
-- [] DataFrame.size	Return an int representing the number of elements in this object.
+- [ ] DataFrame.size	Return an int representing the number of elements in this object.
 
-- [] DataFrame.shape	Return a tuple representing the dimensionality of the DataFrame.
+- [ ] DataFrame.shape	Return a tuple representing the dimensionality of the DataFrame.
 
-- [] DataFrame.memory_usage([index, deep])	Return the memory usage of each column in bytes.
+- [ ] DataFrame.memory_usage([index, deep])	Return the memory usage of each column in bytes.
 
-- [] DataFrame.empty	Indicator whether DataFrame is empty.
+- [ ] DataFrame.empty	Indicator whether DataFrame is empty.
 
-- [] DataFrame.is_copy	Return the copy.
+- [ ] DataFrame.is_copy	Return the copy.
 
 ## Conversion
 DataFrame.astype(dtype[, copy, errors])	Cast a pandas object to a specified dtype dtype.
