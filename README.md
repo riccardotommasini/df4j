@@ -87,7 +87,7 @@ For more information on `.at`, `.iat`, `.loc`, and `.iloc`, see the indexing doc
 - [ ] `DataFrame.combine(other, func[, fill_value, …])`	Perform column-wise combine with another DataFrame based on a passed function.
 - [ ] `DataFrame.combine_first(other)`	Update null elements with value in the same location in other.
 
-#### Function application, GroupBy & Window
+## Function application, GroupBy & Window
 - [ ] `DataFrame.apply(func[, axis, broadcast, …])`	Apply a function along an axis of the DataFrame.
 - [ ] `DataFrame.applymap(func)`	Apply a function to a Dataframe elementwise.
 - [ ] `DataFrame.pipe(func, *args, **kwargs)`	Apply func(self, *args, **kwargs). 
@@ -138,7 +138,7 @@ For more information on `.at`, `.iat`, `.loc`, and `.iloc`, see the indexing doc
 - [ ] `DataFrame.var([axis, skipna, level, ddof, …])`	Return unbiased variance over requested axis.
 - [ ] `DataFrame.nunique([axis, dropna])`	Count distinct observations over requested axis.
 
-#### Reindexing / Selection / Label manipulation
+## Reindexing / Selection / Label manipulation
 - [ ] `DataFrame.add_prefix(prefix)`	Prefix labels with string prefix.
 - [ ] `DataFrame.add_suffix(suffix)`	Suffix labels with string suffix.
 - [ ] `DataFrame.align(other[, join, axis, level, …])`	Align two objects on their axes with the specified join method for each axis Index.
@@ -168,13 +168,13 @@ For more information on `.at`, `.iat`, `.loc`, and `.iloc`, see the indexing doc
 - [ ] `DataFrame.take(indices[, axis, convert, is_copy])`	Return the elements in the given positional indices along an axis.
 - [ ] `DataFrame.truncate([before, after, axis, copy])`	Truncate a Series or DataFrame before and after some index value.
 
-#### Missing data handling
+## Missing data handling
 - [ ] `DataFrame.dropna([axis, how, thresh, …])`	Remove missing values.
 - [ ] `DataFrame.fillna([value, method, axis, …])`	Fill NA/NaN values using the specified method.
 - [ ] `DataFrame.replace([to_replace, value, …])`	Replace values given in to_replace with value.
 - [ ] `DataFrame.interpolate([method, axis, limit, …])`	Interpolate values according to different methods.
 
-#### Reshaping, sorting, transposing
+## Reshaping, sorting, transposing
 - [ ] `DataFrame.droplevel(level[, axis])`	Return DataFrame with requested index / column level(s) removed.
 - [ ] `DataFrame.pivot([index, columns, values])`	Return reshaped DataFrame organized by given index / column values.
 - [ ] `DataFrame.pivot_table([values, index, …])`	Create a spreadsheet-style pivot table as a DataFrame.
@@ -194,14 +194,14 @@ For more information on `.at`, `.iat`, `.loc`, and `.iloc`, see the indexing doc
 - [ ] `DataFrame.T`	Transpose index and columns.
 - [ ] `DataFrame.transpose(*args, **kwargs)`	Transpose index and columns.
 
-#### Combining / joining / merging
+## Combining / joining / merging
 - [ ] `DataFrame.append(other[, ignore_index, …])`	Append rows of other to the end of caller, returning a new object.
 - [ ] `DataFrame.assign(**kwargs)`	Assign new columns to a DataFrame.
 - [ ] `DataFrame.join(other[, on, how, lsuffix, …])`	Join columns of another DataFrame.
 - [ ] `DataFrame.merge(right[, how, on, left_on, …])`	Merge DataFrame or named Series objects with a database-style join.
 - [ ] `DataFrame.update(other[, join, overwrite, …])`	Modify in place using non-NA values from another DataFrame.
 
-#### Time series-related
+## Time series-related
 - [ ] `DataFrame.asfreq(freq[, method, how, …])`	Convert TimeSeries to specified frequency.
 - [ ] `DataFrame.asof(where[, subset])`	Return the last row(s) without any NaNs before where.
 - [ ] `DataFrame.shift([periods, freq, axis, …])`	Shift index by desired number of periods with an optional time freq.
@@ -259,5 +259,5 @@ For more information on `.at`, `.iat`, `.loc`, and `.iloc`, see the indexing doc
 - [ ] `DataFrame.to_clipboard([excel, sep])`	Copy object to the system clipboard.
 - [ ] `DataFrame.style`	Property returning a Styler object containing methods for building a styled HTML representation fo the DataFrame.
 
-#### Sparse
+## Sparse
 - [ ] `SparseDataFrame.to_coo()`	Return the contents of the frame as a sparse SciPy COO matrix.
